@@ -1,0 +1,24 @@
+# Ignore virtual environments
+venv/
+env/
+ENV/
+
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# VS Code settings
+.vscode/
+
+# Environment variable files
+.env
+
+# Flask instance folder (if you use it)
+instance/
+
+# macOS junk
+.DS_Store
+
+# Windows junk
+Thumbs.db
