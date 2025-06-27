@@ -1,12 +1,14 @@
 
 ### Activate the Virtual environment first before running!!!
 from flask import Flask
+from flask import request
 
 app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return '<h1>Hello Tokelo!</h1>'
+    user_agent = request.headers.get('User-Agent')    #learning about Request & application contexts
+    return '<p>Your browser is %s</p>' % user_agent
 
 @app.route('/user/<name>')
 def user(name):
